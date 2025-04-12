@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import Typed from 'typed.js'
-import { Layout,Anchor,Divider, Typography, Space ,Carousel, Avatar, Progress,Collapse,} from 'antd';
+import { Layout,Anchor,Divider, Typography, Carousel, Avatar, Progress,Collapse,} from 'antd';
 import { Html5Outlined,SkypeOutlined,JavaScriptOutlined,TrademarkCircleOutlined,ExclamationOutlined} from '@ant-design/icons'
 import { useSelector } from 'react-redux';
 import './Content.css';
 // import Typed from '/React/my/public/index.html'
-import { useEffect, useState } from 'react';
-const { Title, Paragraph, Text, Link } = Typography;
+import { useEffect } from 'react';
+const { Paragraph } = Typography;
 const { Content,Footer } = Layout;
 const conicColors = {
   '0%': '#87d068',
@@ -167,7 +167,7 @@ const MyContent = () => {
                  height: "120px",
                  display: "flex",
                  position: "relative",
-                 top: "9%",
+                 top: "8%",
                  left: "30px",
                  borderRadius: "20px",
                  boxShadow: "20px 20px 20px rgba(0,0,0,0.3)",

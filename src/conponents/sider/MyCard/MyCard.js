@@ -15,7 +15,7 @@ const MyCard = () => {
   const [top, setTop] = React.useState(0);
   return (
     <Affix offsetTop={top} style={{ position: 'absolute',
-      top: "20%",
+      top: "15%",
       left: "3%",}}>
     <Card
       className={cardsTheme}

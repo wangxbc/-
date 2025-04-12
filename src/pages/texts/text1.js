@@ -20,7 +20,7 @@ const MyText1 = () => {
       className={myTheme}
       style={{
         width: "100%",
-        height: "156vh",
+        height: "188vh",
         margin: "0",
         padding: "0",
         border: "0",
@@ -123,7 +123,7 @@ const MyText1 = () => {
         style={{
           height: "150px",
           position: "absolute",
-          bottom: "-65.8%",
+          bottom: "-92.8%",
           width: "100%",
         }}
       >

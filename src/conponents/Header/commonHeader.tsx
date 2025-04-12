@@ -1,9 +1,10 @@
-
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
 
 import { useSelector,useDispatch } from 'react-redux';
-import { ReadOutlined, UserOutlined , SearchOutlined ,SettingTwoTone ,PlusOutlined,FileImageOutlined } from '@ant-design/icons';
-import { Menu,FloatButton,Layout,Avatar,Dropdown,Button,Divider, Space, Popover, } from 'antd';
+import { ReadOutlined, UserOutlined , SettingTwoTone ,PlusOutlined,FileImageOutlined } from '@ant-design/icons';
+import { Menu,FloatButton,Layout,Avatar,Dropdown,Button,Divider, Space, } from 'antd';
+import { MenuTheme as AntdMenuTheme } from 'antd/es/menu/MenuContext';
 import './commonHeader.css'
 import { addTheme } from '../../store/modules/themeStore';
 import { addWorldTheme } from '../../store/modules/worldStore';
@@ -12,13 +13,13 @@ import { addCardsTheme } from '../../store/modules/cardThemeStore';
 import {addCardColor} from '../../store/modules/cardColorStore'
 import { addBorderTheme } from '../../store/modules/borderTheme';
 import { addContentColor } from '../../store/modules/contentStoe';
-import { useNavigate } from 'react-router-dom';
-
+import { To, useNavigate } from 'react-router-dom';
+import { RootState } from '../../store';
 
 const { Header } = Layout;
 
 
-
+type ExtendedMenuTheme = AntdMenuTheme | '';
 
 
 const itemTwo= [
@@ -81,12 +82,11 @@ const itemOne = [
 ];
 const CommonHeader = () => {
   const navigate = useNavigate()
-  const {myTheme} = useSelector(state => state.myThemes)
-  const {worldTheme} = useSelector(state => state.worldThemes)
-  const {cardTheme} = useSelector(state =>state.cardThemes)
+  const {myTheme} = useSelector((state: RootState) => state.myThemes)
+  useSelector((state: RootState) => state.worldThemes)
+  const {cardTheme} = useSelector((state: RootState) =>state.cardThemes)
   const dispatch = useDispatch()
-  const logout = () => {};
-  const selectMenu = (e) => {
+  const selectMenu = (e: { key: To; }) => {
    console.log(e);
     navigate(e.key)
   }
@@ -98,7 +98,7 @@ const CommonHeader = () => {
     },
   ];
   const [current, setCurrent] = useState("mail");
-  const onClick = (e) => {
+  const onClick = (e: { key: React.SetStateAction<string>; }) => {
     setCurrent(e.key);
   };
 
@@ -109,7 +109,7 @@ const CommonHeader = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          alignitems: "center",
+          alignItems: "center",
         }}
       >
        
@@ -267,7 +267,7 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemTwo}
-          theme=""
+          theme={'' as ExtendedMenuTheme}
         />
         <Menu
           style={{
@@ -279,7 +279,7 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemOne}
-          theme=""
+          theme={'' as ExtendedMenuTheme}
         
         />
         <Dropdown menu={{ items }}>

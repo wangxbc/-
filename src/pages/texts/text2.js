@@ -9,18 +9,15 @@ const { Content, Footer } = Layout;
 const { Paragraph } = Typography;
 const MyText2 = () => {
   const { borderTheme } = useSelector((state) => state.borderThemes);
-  const { contentColor } = useSelector((state) => state.contentColors);
   const { cardTheme } = useSelector((state) => state.cardThemes);
-  const { worldTheme } = useSelector((state) => state.worldThemes);
   const { cardColor } = useSelector((state) => state.cardColors);
-  const { cardsTheme } = useSelector((state) => state.cardsThemes);
   const { myTheme } = useSelector((state) => state.myThemes);
   return (
     <div
       className={myTheme}
       style={{
         width: "100%",
-        height: "138vh",
+        height: "152vh",
         margin: "0",
         padding: "0",
         border: "0",
@@ -117,7 +114,7 @@ const MyText2 = () => {
         style={{
           height: "150px",
           position: 'absolute',
-          bottom: "-44.8%",
+          bottom: "-57.8%",
           width: "100%",
         }}
       >

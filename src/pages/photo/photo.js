@@ -32,7 +32,7 @@ const MyPhoto = () => {
         className={myTheme}
         style={{
           width: "100%",
-          height: "358vh",
+          height: "388vh",
           margin: "0",
           padding: "0",
           border: "0",
@@ -138,7 +138,7 @@ const MyPhoto = () => {
                 }}
               ><p  style={{alignItems:'center',lineHeight:'1.5',paddingLeft:"15px",paddingTop:'28px',paddingRight:"5px",fontWeight:'550'}}>在苏州的时光，如同一首温婉的诗。漫步在苏州的街头巷尾，仿佛走进了一幅生动的江南水乡画卷。清晨，当第一缕阳光洒在青石板路上，古城的苏醒便开始了。小桥流水旁，晨练的老人悠然自得，他们或打太极，或舞剑，享受着生活的宁静与和谐。</p></div>
             </div>
-            <div style={{paddingTop:'30px',display:'flex',width:"950px"}}>
+            <div style={{paddingTop:'30px',display:'flex',width:"900px"}}>
                 <Image
                   style={{
                     width: "400px",
@@ -244,8 +244,8 @@ const MyPhoto = () => {
                 />
             </div>
             <div>
-              <p style={{position:'absolute',top:'37%',left:'47%',width:'400px',fontSize:"15px",lineHeight:"1.5"}}>江汉路，作为武汉著名的商业街，不仅承载着这座城市的繁华与时尚，也见证了历史的变迁。</p>
-              <p style={{position:'absolute',top:'102%',left:'47%',width:'400px',fontSize:"15px",lineHeight:"1.5"}}>漫步在这条街上，可以感受到武汉的独特魅力。街道两旁林立着各种商铺，从传统小吃到国际品牌，应有尽有。夜幕降临时，江汉路更是灯火辉煌，人流如织，成为武汉夜生活的缩影。</p>
+              <p style={{position:'absolute',top:'37%',left:'52%',width:'400px',fontSize:"15px",lineHeight:"1.5"}}>江汉路，作为武汉著名的商业街，不仅承载着这座城市的繁华与时尚，也见证了历史的变迁。</p>
+              <p style={{position:'absolute',top:'102%',left:'52%',width:'400px',fontSize:"15px",lineHeight:"1.5"}}>漫步在这条街上，可以感受到武汉的独特魅力。街道两旁林立着各种商铺，从传统小吃到国际品牌，应有尽有。夜幕降临时，江汉路更是灯火辉煌，人流如织，成为武汉夜生活的缩影。</p>
             <Image
                   style={{
                     width: "400px",
@@ -272,8 +272,8 @@ const MyPhoto = () => {
                 />
             </div>
             </div>
-            <p style={{position:'absolute',top:'67%',left:'122%',width:'230px',fontSize:"15px",lineHeight:"1.5"}}>夜晚的长江大桥</p>
-            <p style={{position:'absolute',top:'102%',left:'122%',width:'230px',fontSize:"15px",lineHeight:"1.5"}}>长江大桥，横卧于滚滚长江之上，不仅是武汉的标志性建筑，也是中国桥梁工程史上的璀璨明珠。它以其雄伟的姿态，连接着武汉三镇，成为连接南北的重要通道。</p>
+            <p style={{position:'absolute',top:'67%',left:'134%',width:'230px',fontSize:"15px",lineHeight:"1.5"}}>夜晚的长江大桥</p>
+            <p style={{position:'absolute',top:'102%',left:'134%',width:'200px',fontSize:"15px",lineHeight:"1.5"}}>长江大桥，横卧于滚滚长江之上，不仅是武汉的标志性建筑，也是中国桥梁工程史上的璀璨明珠。</p>
             </div>
             <div
             style={{
@@ -362,7 +362,7 @@ const MyPhoto = () => {
                   }}
                   src={require("../../assets/西安4.jpg")}
                 />
-                 <p style={{position:'absolute',top:'-15%',left:'0%',width:'300px',fontSize:"15px",lineHeight:"1.5"}}>西安，古称长安，是中国历史上重要的古都之一，拥有丰富的人文知识和历史文化。这座城市见证了多个朝代的兴衰更替，留下了众多历史遗迹和文化瑰宝。</p>
+                 <p style={{position:'absolute',top:'-15%',left:'10%',width:'300px',fontSize:"15px",lineHeight:"1.5"}}>西安，古称长安，是中国历史上重要的古都之一，拥有丰富的人文知识和历史文化。这座城市见证了多个朝代的兴衰更替，留下了众多历史遗迹和文化瑰宝。</p>
                  <p style={{position:'absolute',top:'59.5%',left:'74%',width:'230px',fontSize:"15px",lineHeight:"1.5"}}>大雁塔，位于中国陕西省西安市大慈恩寺内，是一座具有千年历史的佛教建筑。大雁塔不仅是中国古代建筑艺术的杰作，也是佛教文化的重要象征，承载着丰富的历史和文化内涵。</p>
                 </div>
             </div>

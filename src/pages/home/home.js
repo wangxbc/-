@@ -1,11 +1,6 @@
 import React from "react";
-import CommonHeader from "../../conponents/Header/commonHeader";
-import MyCard from "../../conponents/sider/MyCard/MyCard";
 import { useSelector } from "react-redux";
-import MySider from "../../conponents/sider/sider";
 import MyContent from "../../conponents/Content/Content";
-import MyFooter from "../../bottom/bottom";
-import { Slider } from "antd";
 
 
 const Home = () => {

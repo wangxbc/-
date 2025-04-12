@@ -1,10 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import MyContent from "../../conponents/Content/Content";
+import { RootState } from "@/store";
 
 
 const Home = () => {
-  const { myTheme } = useSelector((state) => state.myThemes);
+  const { myTheme } = useSelector((state:RootState) => state.myThemes);
 
   return (
     <>

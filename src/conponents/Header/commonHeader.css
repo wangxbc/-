@@ -61,11 +61,14 @@
 .bchemeborder{
         border-color: #ff7300;
 }
-.ccheme{
+/* .ccheme{
         color: #a0ce4e;
+} */
+.ccheme{
+        color: #86b23a;
 }
 .ccheme1{
-        background-color: #a0ce4e;
+        background-color: #86b23a;
 }
 .cchemeborder{
         border-color: #a0ce4e;

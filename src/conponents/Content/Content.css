@@ -4,7 +4,14 @@
     height: 180px;
     display: flex;
 }
-
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 .box{
     animation: flip 2s infinite ;
 }

@@ -1,14 +1,13 @@
 import React from "react";
 import CommonHeader from "../conponents/Header/commonHeader";
-import MyCard from "../conponents/sider/MyCard/MyCard";
 import "./main.css";
 import { useSelector } from "react-redux";
 import MySider from "../conponents/sider/sider";
-import MyFooter from "../bottom/bottom";
 import { Outlet } from "react-router-dom";
+import { RootState } from "@/store";
 
 const Main = () => {
-  const { myTheme } = useSelector((state) => state.myThemes);
+  const { myTheme } = useSelector((state:RootState) => state.myThemes);
 
   return (
     <>

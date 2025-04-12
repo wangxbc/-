@@ -37,7 +37,7 @@ const MyFooter = () => {
               display: "inline-block",
               alignContent:"center",
               paddingLeft: "100%",
-              animation: "scroll 180s linear infinite",
+              animation: "scroll 30s linear infinite",
             }}
           >
             <ul style={{ fontSize: "80px",fontWeight:'700'}}>

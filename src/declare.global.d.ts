@@ -1,9 +1,9 @@
 declare module '*.css' {
-    const styles: { [className: string]: string };
-    export default styles;
-  }
-  
-  declare module '*.less' {
-    const styles: { [className: string]: string };
-    export default styles;
-  }
+  const styles: { [className: string]: string };
+  export default styles;
+}
+
+declare module '*.less' {
+  const styles: { [className: string]: string };
+  export default styles;
+}

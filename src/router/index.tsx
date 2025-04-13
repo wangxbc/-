@@ -1,39 +1,40 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
-import Main from "../pages/main";
-import Home from "../pages/home/home";
-import MyText1 from "../pages/texts/text1";
-import MyText2 from "../pages/texts/text2";
-import MyPhoto from "../pages/photo/photo";
+import React from 'react';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
+import Main from '../pages/main';
+import Home from '../pages/home/home';
+import MyText1 from '../pages/texts/text1';
+import MyText2 from '../pages/texts/text2';
+import MyPhoto from '../pages/photo/photo';
 const routes = [
   {
-    path: "/",
+    path: '/',
     Component: Main,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Navigate to="home" replace />,
       },
       {
-        path: "home",
+        path: 'home',
         Component: Home,
       },
       {
-        path: "texts",
-        children:[
+        path: 'texts',
+        children: [
           {
-            path:'text1',
+            path: 'text1',
             Component: MyText1,
           },
           {
-            path:'text2',
+            path: 'text2',
             Component: MyText2,
-          }
-        ]
+          },
+        ],
       },
       {
-        path:'photo',
+        path: 'photo',
         Component: MyPhoto,
-      }
+      },
     ],
   },
 ];

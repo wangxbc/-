@@ -1,9 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import {
-  Layout,
-} from "antd";
-import MyCard from "./MyCard/MyCard";
+import React from 'react';
+import { Layout } from 'antd';
+import MyCard from './MyCard/MyCard';
 
 const { Sider } = Layout;
 
@@ -12,8 +10,8 @@ const MySider = () => {
     <>
       <Sider
         style={{
-          height: "100%",
-          width:"40%"
+          height: '100%',
+          width: '40%',
         }}
       >
         <MyCard />

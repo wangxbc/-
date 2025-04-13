@@ -12,6 +12,7 @@
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "antd": "^5.20.6",
+    "caniuse-lite": "^1.0.30001713",
     "gasp": "^0.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,12 +24,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
-    "lint": "eslint .", 
-    "lint:fix": "eslint . --fix", 
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write ."
   },
   "eslintConfig": {
@@ -50,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^8.57.1",

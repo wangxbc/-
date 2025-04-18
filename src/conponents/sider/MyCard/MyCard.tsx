@@ -13,6 +13,18 @@ const MyCard = () => {
   const { cardsTheme } = useSelector((state: RootState) => state.cardsThemes);
   const { cardColor } = useSelector((state: RootState) => state.cardColors);
   const [top, setTop] = React.useState(0);
+  const [userAvatar, setUserAvatar] = React.useState<string | undefined>(undefined);
+
+  React.useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (user) {
+      const userData = JSON.parse(user);
+      if (userData.avatar) {
+        setUserAvatar(`data:image/jpeg;base64,${userData.avatar}`);
+      }
+    }
+  }, []);
+
   return (
     <Affix offsetTop={top} style={{ position: 'absolute', top: '15%', left: '3%' }}>
       <Card
@@ -37,7 +49,7 @@ const MyCard = () => {
               borderRadius: '38px 38px',
             }}
             alt="example"
-            src={require('../../../assets/me.jpg')}
+            src={userAvatar || require('../../../assets/me.jpg')}
           />
         }
       >

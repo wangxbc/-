@@ -102,6 +102,17 @@ const CommonHeader = () => {
   const onClick = (e: { key: React.SetStateAction<string> }) => {
     setCurrent(e.key);
   };
+  const [userAvatar, setUserAvatar] = React.useState<string | undefined>(undefined);
+
+  React.useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (user) {
+      const userData = JSON.parse(user);
+      if (userData.avatar) {
+        setUserAvatar(`data:image/jpeg;base64,${userData.avatar}`);
+      }
+    }
+  }, []);
 
   return (
     <>
@@ -277,7 +288,7 @@ const CommonHeader = () => {
           theme={'' as ExtendedMenuTheme}
         />
         <Dropdown menu={{ items }}>
-          <Avatar size={50} src={<img src={require('../../assets/me.jpg')} />} />
+          <Avatar size={50} src={userAvatar || require('../../assets/me.jpg')} />
         </Dropdown>
       </Header>
     </>

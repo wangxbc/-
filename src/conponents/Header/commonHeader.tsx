@@ -8,6 +8,7 @@ import {
   SettingTwoTone,
   PlusOutlined,
   FileImageOutlined,
+  ArrowRightOutlined,
 } from '@ant-design/icons';
 import { Menu, FloatButton, Layout, Avatar, Dropdown, Button, Divider, Space } from 'antd';
 import { MenuTheme as AntdMenuTheme } from 'antd/es/menu/MenuContext';
@@ -19,8 +20,10 @@ import { addCardsTheme } from '../../store/modules/cardThemeStore';
 import { addCardColor } from '../../store/modules/cardColorStore';
 import { addBorderTheme } from '../../store/modules/borderTheme';
 import { addContentColor } from '../../store/modules/contentStoe';
-import { To, useNavigate } from 'react-router-dom';
+import { Link, To, useNavigate } from 'react-router-dom';
 import { RootState } from '../../store';
+import path from 'path';
+import { link } from 'fs';
 
 const { Header } = Layout;
 
@@ -82,6 +85,32 @@ const itemOne = [
     icon: <PlusOutlined style={{ fontSize: '18px' }} />,
   },
 ];
+const items = [
+  {
+    key: '1',
+    path: '/login',
+    url: '/React/my/src/pages/login',
+    label: (
+      <Link to="/login">
+        <span
+          style={{
+            display: 'block',
+            marginBottom: '2px',
+            fontSize: '15px',
+            fontWeight: '500',
+            marginLeft: '10px',
+          }}
+        >
+          Welcome
+        </span>
+        <div style={{ display: 'flex' }}>
+          <ArrowRightOutlined />
+          <span style={{ fontSize: '15px', marginTop: '2px' }}>退出登录</span>
+        </div>
+      </Link>
+    ),
+  },
+];
 const CommonHeader = () => {
   const navigate = useNavigate();
   const { myTheme } = useSelector((state: RootState) => state.myThemes);
@@ -92,12 +121,6 @@ const CommonHeader = () => {
     console.log(e);
     navigate(e.key);
   };
-  const items = [
-    {
-      key: '1',
-      label: 'welcom',
-    },
-  ];
   const [current, setCurrent] = useState('mail');
   const onClick = (e: { key: React.SetStateAction<string> }) => {
     setCurrent(e.key);

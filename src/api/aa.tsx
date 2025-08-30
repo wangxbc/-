@@ -3,7 +3,7 @@ export interface RegisterData {
   username: string;
   password: string;
   nickname: string;
-  headImgUrl: string; 
+  headImgUrl: string;
 }
 
 export interface RegisterResponse {

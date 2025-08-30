@@ -75,10 +75,11 @@ const MyCard = () => {
                 fontSize: '20px',
                 fontWeight: '600',
                 marginLeft: '20px',
+                marginTop: '20px',
                 display: 'flex',
               }}
             >
-              Html Css JavaScript Ajax React Webpack
+              Html5 Css3 JavaScript TypeScript React Ajax node.js git Eslint Pretter Webpack
             </span>
           }
         />

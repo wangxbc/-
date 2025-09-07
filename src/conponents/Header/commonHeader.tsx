@@ -283,7 +283,7 @@ const CommonHeader = () => {
           />
         </FloatButton.Group>
 
-        <Menu
+        {/* <Menu
           style={{
             fontSize: 'large',
             fontWeight: '700',
@@ -296,8 +296,7 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemTwo}
-          theme={''}
-        />
+        /> */}
         <Menu
           style={{
             fontSize: 'large',
@@ -308,7 +307,6 @@ const CommonHeader = () => {
           selectedKeys={[current]}
           mode="horizontal"
           items={itemOne}
-          theme={''}
         />
         <Dropdown menu={{ items }}>
           <Avatar size={50} src={userAvatar || require('../../assets/me.jpg')} />

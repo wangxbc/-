@@ -25,7 +25,7 @@ const Main = () => {
         }}
       >
         <CommonHeader />
-        <MySider>{/* <MyCard /> */}</MySider>
+        <MySider />
         {/* <MyFooter/> */}
         <Outlet />
       </div>
